@@ -1,21 +1,42 @@
 {
-    "ignition": {
-        "config": {
-            "merge": [
-                {
-                    "source": "https://api-int.okd.lab.local:22623/config/worker"
-                }
-            ]
-        },
-        "security": {
-            "tls": {
-                "certificateAuthorities": [
-                    {
-                        "source": "data:text/plain;charset=utf-8;base64,LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURFRENDQWZpZ0F3SUJBZ0lJQjdqTnZnOElFNjR3RFFZSktvWklodmNOQVFFTEJRQXdKakVTTUJBR0ExVUUKQ3hNSmIzQmxibk5vYVdaME1SQXdEZ1lEVlFRREV3ZHliMjkwTFdOaE1CNFhEVEkxTVRJeE5ERTNOREkwT1ZvWApEVE0xTVRJeE1qRTNOREkwT1Zvd0pqRVNNQkFHQTFVRUN4TUpiM0JsYm5Ob2FXWjBNUkF3RGdZRFZRUURFd2R5CmIyOTBMV05oTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUF1dDAvNzlkK2VoTzMKczh1MitWMk1ETFMrY09JQk9NaDNvSGdzNTVEVUYvc0xQTEl4d0ZKL3lPVkkwQlJmY25zdkRNK2VVb0F0RllERgpiWVlEaVdEYWIxSWtjUGJDSVhEZUg3eG1nSmZHUGJiSmZ5QlNLNkNIRnRZbHpvYjZOWmFMbmFhOGhKRUpUMWc5CmVuWUUvaDcxZHBKWkQwdXhTby9icHRyZUtFN2cxcnVnNi8zcDY4VXdEalV1OHlqSkxQSjkxc080TDFKTWt6UEcKRk5jWVNabER3cEpCaFhYSzc4TGRDMmUwSmNhWXhkM2QwNU5BRGM5RmZSa2NIeVExR3JTSlArK3J6ZERQS2EzNAo3SHF6VzE5VVM2WkZRMm9OaUd0czZ1RGxQNks4OUhzQlptRVZGVlNSM2dqMlA3YXUwdzBZODFvZGNHU3lRLzBlCm81RnYwS29FQVFJREFRQUJvMEl3UURBT0JnTlZIUThCQWY4RUJBTUNBcVF3RHdZRFZSMFRBUUgvQkFVd0F3RUIKL3pBZEJnTlZIUTRFRmdRVVoxbHllcjJJQnFtRU10V3pEMG14bnRsWUxjQXdEUVlKS29aSWh2Y05BUUVMQlFBRApnZ0VCQUUxZjlkNFc5aU1sNzk2S3dpRGZqRTdKQnVkR3dJVG5ua0NuNS95S3N3eVNqQ2lvQjRSMjh5UC9GcVBpCkNtb0syUkplejFKaElRYVJ4TDJheXo0ZlZmbHVwRE5qb0F1cEg5MkdjZnRnT2U4ang1MDlCUHFOajlZd3dLekwKbDNYUnRBUy9WNVlmNHBwKzRhSUpwK1VIaGh6VXc3dkx4NEFmRDRJd0FXc2VVa1Vad1RJc0NpQ01oRUJ6TEtCWQpMaDBYMUNpdm0zUlJqazB4d0I2V0NLL0cwUXkrRndVc3lOQ0QrOVBVZ2FBbE1aTUJmZm9hTmpPS0hYUy9xZzAzCjlFZTlMOEEraXFPSU1oaWZ5V0Jjd1FxOG15KzFMeUZ1V1dRTTc1MHR4VkhEamg4WnFRYmFmbHFzWDU3NjJXRGQKakwwNkNBcmRKYzhrMWlZRGFWbFhhQlhyMWFBPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg=="
-                    }
-                ]
-            }
-        },
-        "version": "3.2.0"
-    }
+  "ignition": {
+    "config": {
+      "merge": [
+        {
+          "source": "https://api-int.okd.lab.local:22623/config/worker"
+        }
+      ]
+    },
+    "passwd": {
+      "users": [
+        {
+          "name": "core",
+          "sshAuthorizedKeys": [
+            "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOa7nqbnhTaH8l6ftHRK2B056NOIQpoDIsi/8BbwnKUy root@dev10"
+          ]
+        }
+      ]
+    },
+    "storage": {
+      "files": [
+        {
+          "path": "/etc/hosts",
+          "mode": 420,
+          "contents": {
+            "source": "data:text/plain;charset=utf-8;base64,MTI5LjAuMC4xICAgbG9jYWxob3N0CjE5Mi4xNjguMTEuNTAgIGFwaS1pbnQuaG9rZC5sYWJMb2NhbA=="
+          }
+        }
+      ]
+    },
+    "security": {
+      "tls": {
+        "certificateAuthorities": [
+          {
+            "source": "data:text/plain;charset=utf-8;base64,LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURFRENDQWZpZ0F3SUJBZ0lJQjdqTnZnOElFNjR3RFFZSktvWklodmNOQVFFTEJRQXdKakVTTUJBR0ExVUUKQ3hNSmIzQmxibk5vYVdaME1SQXdEZ1lEVlFRREV3ZHliMjkwTFdOaE1CNFhEVEkxTVRJeE5ERTNOREkwT1ZvWApEVE0xTVRJeE1qRTNOREkwT1Zvd0pqRVNNQkFHQTFVRUN4TUpiM0JsYm5Ob2FXWjBNUkF3RGdZRFZRUURFd2R5CmIyOTBMV05oTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUF1dDAvNzlkK2VoTzMKczh1MitWMk1ETFMrY09JQk9NaDNvSGdzNTVEVUYvc0xQTEl4d0ZKL3lPVkkwQlJmY25zdkRNK2VVb0F0RllERgpiWVlEaVdEYWIxSWtjUGJDSVhEZUg3eG1nSmZHUGJiSmZ5QlNLNkNIRnRZbHpvYjZOWmFMbmFhOGhKRUpUMWc5CmVuWUUvaDcxZHBKWkQwdXhTby9icHRyZUtFN2cxcnVnNi8zcDY4VXdEalV1OHlqSkxQSjkxc080TDFKTWt6UEcKRk5jWVNabER3cEpCaFhYSzc4TGRDMmUwSmNhWXhkM2QwNU5BRGM5RmZSa2NIeVExR3JTSlArK3J6ZERQS2EzNAo3SHF6VzE5VVM2WkZRMm9OaUd0czZ1RGxQNks4OUhzQlptRVZGVlNSM2dqMlA3YXUwdzBZODFvZGNHU3lRLzBlCm81RnYwS29FQVFJREFRQUJvMEl3UURBT0JnTlZIUThCQWY4RUJBTUNBcVF3RHdZRFZSMFRBUUgvQkFVd0F3RUIKL3pBZEJnTlZIUTRFRmdRVVoxbHllcjJJQnFtRU10V3pEMG14bnRsWUxjQXdEUVlKS29aSWh2Y05BUUVMQlFBRApnZ0VCQUUxZjlkNFc5aU1sNzk2S3dpRGZqRTdKQnVkR3dJVG5ua0NuNS95S3N3eVNqQ2lvQjRSMjh5UC9GcVBpCkNtb0syUkplejFKaElRYVJ4TDJheXo0ZlZmbHVwRE5qb0F1cEg5MkdjZnRnT2U4ang1MDlCUHFOajlZd3dLekwKbDNYUnRBUy9WNVlmNHBwKzRhSUpwK1VIaGh6VXc3dkx4NEFmRDRJd0FXc2VVa1Vad1RJc0NpQ01oRUJ6TEtCWQpMaDBYMUNpdm0zUlJqazB4d0I2V0NLL0cwUXkrRndVc3lOQ0QrOVBVZ2FBbE1aTUJmZm9hTmpPS0hYUy9xZzAzCjlFZTlMOEEraXFPSU1oaWZ5V0Jjd1FxOG15KzFMeUZ1V1dRTTc1MHR4VkhEamg4WnFRYmFmbHFzWDU3NjJXRGQKakwwNkNBcmRKYzhrMWlZRGFWbFhhQlhyMWFBPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg=="
+          }
+        }
+      ]
+    },
+    "version": "3.2.0"
+  }
 }
