@@ -12,7 +12,8 @@
         {
           "name": "core",
           "sshAuthorizedKeys": [
-            "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOa7nqbnhTaH8l6ftHRK2B056NOIQpoDIsi/8BbwnKUy root@dev10"
+            "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOa7nqbnhTaH8l6ftHRK2B056NOIQpoDIsi/8BbwnKUy root@dev10",
+            "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICm1I5L31NWBdEvPjuXz0uEhIi6HtWx6SuN/zMFib01f root@dev10"
           ]
         }
       ]
