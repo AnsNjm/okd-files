@@ -21,13 +21,6 @@
         "storage": {
             "files": [
                 {
-                    "path": "/etc/NetworkManager/system-connections/okd-dns.nmconnection",
-                    "mode": 384,
-                    "contents": {
-                        "source": "data:text/plain;charset=utf-8,[connection]\nid=okd-static-dns\ntype=ethernet\ninterface-name=ens160\nautoconnect=true\n\n[ipv4]\nmethod=auto\ndns=192.168.11.130;\ndns-search=okd.lab.local;\nignore-auto-dns=true\n\n[ipv6]\nmethod=ignore\n"
-                    }
-                },
-                {
                     "path": "/etc/hosts",
                     "mode": 420,
                     "contents": {
