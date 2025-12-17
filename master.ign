@@ -7,28 +7,6 @@
                 }
             ]
         },
-        "passwd": {
-            "users": [
-                {
-                    "name": "core",
-                    "sshAuthorizedKeys": [
-                        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOa7nqbnhTaH8l6ftHRK2B056NOIQpoDIsi/8BbwnKUy root@dev10",
-                        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICm1I5L31NWBdEvPjuXz0uEhIi6HtWx6SuN/zMFib01f root@dev10"
-                    ]
-                }
-            ]
-        },
-        "storage": {
-            "files": [
-                {
-                    "path": "/etc/hosts",
-                    "mode": 420,
-                    "contents": {
-                        "source": "data:text/plain;charset=utf-8;base64,MTI5LjAuMC4xICAgbG9jYWxob3N0CjE5Mi4xNjguMTEuNTAgIGFwaS1pbnQuaG9rZC5sYWJMb2NhbA=="
-                    }
-                }
-            ]
-        },
         "security": {
             "tls": {
                 "certificateAuthorities": [
