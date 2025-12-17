@@ -12,20 +12,9 @@
                 {
                     "name": "core",
                     "sshAuthorizedKeys": [
-                        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOa7nqbnhTaH8l6ftHRK2B056NOIQpoDIsi/8BbwnKUy root@dev10",
-                        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICm1I5L31NWBdEvPjuXz0uEhIi6HtWx6SuN/zMFib01f root@dev10"
+                        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIG0rUK3oug9mLVUISHN31Y8BjnEcyOLlunr0K6RgNJlr root@dev10",
+                        "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC/4bwI7cOLPp5LB8WuFyRYTcDtl2IUjw/9hiUJcnS8Uwf2FvScujsefrZSLjJ7qxGuzSOaQDKcPjYKBto5mz/I82ye5OrFfMZyRGkoxpvjVXZ/icUJEvkzyEzJpkkD0PCVcqxzVsLrt0T9MOhCg2PY1BdSY8DhDDlX+4s+VWNEMo36Cx3SzKdDz09oDpf+KJ73f7q6bXkdDu6m5zMzNQpoJklI4FDzPP2UKw1CStKm1JTUESo8VLpfgsQl8cEI2NSSKjPdKSbauyAhrDGif/Yan+0EX/KRdiaaE9ssEs5R3C1rafz2USeUQEb2w5KR6WkTHJBlyzjS3bKobNB0uZK3\n"
                     ]
-                }
-            ]
-        },
-        "storage": {
-            "files": [
-                {
-                    "path": "/etc/hosts",
-                    "mode": 420,
-                    "contents": {
-                        "source": "data:text/plain;charset=utf-8;base64,MTI5LjAuMC4xICAgbG9jYWxob3N0CjE5Mi4xNjguMTEuNTAgIGFwaS1pbnQuaG9rZC5sYWJMb2NhbA=="
-                    }
                 }
             ]
         },
